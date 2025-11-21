@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - BIC BOCK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="orderConfirmation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">BIC BOCK</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#collections">Collections</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="orders.html">My Orders</a></li>
+                </ul>
+            </nav>
+            <a href="checkout.html" style="text-decoration: none; color: inherit;">
+                <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Order Confirmation Section -->
+    <section class="confirmation-section">
+        <div class="container">
+            <div class="confirmation-container">
+                <div class="success-icon">✓</div>
+                <h1>Order Confirmed!</h1>
+                <p class="order-number">Order Number: <strong id="order-id">Loading...</strong></p>
+                <p class="delivery-date">Estimated Delivery: <strong id="delivery-date">Loading...</strong></p>
+                <p style="color: #666; margin-bottom: 20px;">Thank you for your order! We've sent a confirmation email to <strong id="customer-email">your email</strong>.</p>
+
+                <!-- Order Details -->
+                <div class="order-details-section">
+                    <h3>Order Summary</h3>
+                    <div id="order-items">
+                        <!-- Items will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping:</span>
+                            <span id="shipping">₹50.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax (GST 18%):</span>
+                            <span id="tax">₹0.00</span>
+                        </div>
+                        <div class="total-row final-total">
+                            <span>Total:</span>
+                            <span id="total">₹0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Address -->
+                <div class="shipping-address">
+                    <h4>Shipping Address</h4>
+                    <div id="shipping-address">
+                        <!-- Address will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <a href="orders.html" class="btn btn-primary">View All Orders</a>
+                    <a href="index.html" class="btn btn-secondary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Shop, Near Novo Hotel, Shoe Markit Sanjay Palace, Sanjay Place, Agra-282002, Uttar Pradesh</p>
+                    <p>BicBok@.com</p>
+                    <p>+91 7827908362</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and new collections</p>
+                    <form>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 BIC BOCK. All rights reserved. Developed by "Sarfaraz Ealhie"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/orderConfirmation.js"></script>
+</body>
+</html>
